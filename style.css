@@ -1,0 +1,24 @@
+body {
+    background-image: url('c:\Users\namma\Downloads\trungthu.jpg'); /* Đổi đường dẫn tới hình nền */
+    background-size: cover;   
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    transform: scale(0.5); /* Đặt kích thước ảnh nhỏ hơn ban đầu */
+    opacity: 0;            /* Đặt độ mờ ban đầu là 0 */
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Thay đổi kích thước và opacity trong 1 giây */
+}
+
+img.show {
+    transform: scale(1);   /* Đặt kích thước ảnh thành bình thường */
+    opacity: 1;            /* Đặt độ mờ thành 1 */
+}
+
+/* Lời chúc */
+#message {
+    font-size: 24px;
+    color: green;
+    margin-top: 20px;
+}
